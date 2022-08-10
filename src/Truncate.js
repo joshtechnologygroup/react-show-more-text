@@ -199,6 +199,8 @@ export default class Truncate extends React.Component {
         ].join(' ');
 
         canvasContext.font = font;
+        // Take letter spacing from the styles provided to the text origially
+        canvasContext.letterSpacing = style['letter-spacing'];
 
         this.setState({
             targetWidth
